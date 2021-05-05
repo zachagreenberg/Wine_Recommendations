@@ -2,7 +2,7 @@
 
 by Zachary Greenberg
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Banner.jpg" width="400" height="250" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Banner.jpg" width="600" height="250" /></p>
 
 
 # Overview
@@ -30,7 +30,7 @@ The data for this recommender system was scraped from Vivino.com, a website whic
 # Exploratory Data Analysis
 My process began by looking at the distribution of wine types from my scraped data:
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/wine_graphs.png" width="400" height="250" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/wine_graphs.png" width="500" height="350" /></p>
 
 
 One of my focuses was specifically the text reviews. I performed NLP techniques on them and generated word clouds for each of the types of wine. 
@@ -55,11 +55,11 @@ Before I created my recommender system, I put the parsed review text data into a
 
 With the utilization of MultiNomial Naive Bayes, the textual data had a 78% accuracy rate of correctly identifying the types of wine. This allowed me to validate the reviews as helpful bits of information in generating content based recommendations.
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Matrix.png" width="400" height="250" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Matrix.png" width="500" height="350" /></p>
 
 I then created 2 recommender systems using Cosine Similarity and Euclidean Distance as metrics. 
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/EuclideanModelOutput.png" width="400" height="250" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/EuclideanModelOutput.png" width="500" height="250" /></p>
 
 
 # Evaluation & Next Steps
@@ -74,9 +74,9 @@ Some of the next steps I would like to take include:
 -----------------------------------------------
 ## Repository Structure
 
-├── Data
-├── Images
-├── .gitignore
-├── Wine_Recommendations.pdf
-├── Project_Notebook.ipynb
-└── README.md
+├── Data  
+├── Images  
+├── .gitignore  
+├── Project_Notebook.ipynb  
+├── README.md  
+└── Wine_Recommendations.pdf. 
