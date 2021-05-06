@@ -30,7 +30,7 @@ The data for this recommender system was scraped from Vivino.com, a website whic
 # Exploratory Data Analysis
 My process began by looking at the distribution of wine types from my scraped data:
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/wine_graphs.png" width="500" height="350" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/wine_graphs.png" width="650" height="350" /></p>
 
 
 One of my focuses was specifically the text reviews. I performed NLP techniques on them and generated word clouds for each of the types of wine. 
@@ -59,7 +59,7 @@ With the utilization of MultiNomial Naive Bayes, the textual data had a 78% accu
 
 I then created 2 recommender systems using Cosine Similarity and Euclidean Distance as metrics. 
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/EuclideanModelOutput.png" width="500" height="250" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/EuclideanModelOutput.png" width="650" height="250" /></p>
 
 
 # Evaluation & Next Steps
@@ -68,7 +68,7 @@ I was pleased to achieve 78% accuracy in the MultiNomial Bayes test I ran on the
 
 Some of the next steps I would like to take include:
 - Adding more wines to the roster
-- Using LDA for topic modeling to make the search for wines by the descriptions
+- Using LDA for topic modeling to search for wines by description
 - Create an interface for user interaction
 
 -----------------------------------------------
