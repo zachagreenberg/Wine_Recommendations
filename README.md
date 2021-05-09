@@ -30,10 +30,12 @@ The data for this recommender system was scraped from [Vivino.com](www.vivino.co
 # Exploratory Data Analysis
 My process began by looking at the distribution of wine types from my scraped data:
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/wine_graphs.png" width="900" height="350" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/wine_graphs.png" width="900" height="400" /></p>
+
+The distribution of wines was fairly even amongst the 6 types. It was also not surprising that the top 3 countries represented from these wines were France, the US, and Italy. 
 
 
-One of my focuses was specifically the text reviews. I performed NLP techniques on them and generated word clouds for each of the types of wine. 
+One of my focuses was specifically the text reviews. I performed NLP techniques on them and generated word clouds for each of the types of wine. (All of the clouds are available in the image folder, I condensed it for the Readme to save space.) 
 
 <p float="left">
   <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Redcloud.png" width="300" height="300" />
@@ -41,14 +43,11 @@ One of my focuses was specifically the text reviews. I performed NLP techniques 
 </p>
 
 <p float="left">
-  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Sparklingcloud.png" width="300" height="300" />
-  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Rosecloud.png" width="300" height="300" /> 
-</p>
-
-<p float="left">
   <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Dessertcloud.png" width="300" height="300" />
   <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Fortifiedcloud.png" width="300" height="300" /> 
 </p>
+
+We can see from these wordclouds that the reviews seem to characterize the profiles of the wines pretty well. 
 
 
 
