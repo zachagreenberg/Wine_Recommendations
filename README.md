@@ -36,15 +36,15 @@ My process began by looking at the distribution of wine types from my scraped da
 One of my focuses was specifically the text reviews. I performed NLP techniques on them and generated word clouds for each of the types of wine. 
 
 <p float="left">
-  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Redcloud.png" width="100" />
-  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Whitecloud.png" width="100" /> 
-  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Sparklingcloud.png" width="100" />
+  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Redcloud.png" width="300" height="200" />
+  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Whitecloud.png" width="300" height="200" /> 
+  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Sparklingcloud.png" width="300" height="200" />
 </p>
 
 <p float="left">
-  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Rosécloud.png" width="100" />
-  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Dessertcloud.png" width="100" /> 
-  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Fortifiedcloud.png" width="100" />
+  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Rosecloud.png" width="300" height="200" />
+  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Dessertcloud.png" width="300" height="200" /> 
+  <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Fortifiedcloud.png" width="300" height="200" />
 </p>
 
 
