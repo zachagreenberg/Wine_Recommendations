@@ -55,18 +55,22 @@ We can see from these wordclouds that the reviews seem to characterize the profi
 # Modeling
 Before I created my recommender system, I put the parsed review text data into a classification algorithm to assess their ability to predict the type of wine.
 
-With the utilization of MultiNomial Naive Bayes, the textual data had a 80% accuracy rate of correctly identifying the types of wine. This allowed me to validate the reviews as helpful bits of information in generating content based recommendations.
+With the utilization of MultiNomial Naive Bayes, the textual data had a 83% accuracy rate of correctly identifying the types of wine. This allowed me to validate the reviews as helpful bits of information in generating content based recommendations.
 
 <p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Matrix.png" width="500" height="350" /></p>
 
-I then created 2 recommender systems using Cosine Similarity and Euclidean Distance as metrics. 
+I then created variations of recommender systems using Cosine Similarity and Euclidean Distance as metrics. The variations included a general wine recommender and even recommendatons by winery. 
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/EuclideanModelOutput.png" width="650" height="250" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/ModelOutput.png" width="650" height="250" /></p>
+
+This image is a comparison of the two models for a general wine recommender. Each of the recommendations returned a NY Chardonnay, like the Lloyd Chardonnay that was input into the model.
+
 
 
 # Evaluation & Next Steps
-The output of my rec system is difficult to interpret numerically. The success of it is more subject to opinion due to the nature of content based recommendations. I called on the help of my wine drinking friends to try out the results, and they all agreed the Euclidean Distance model seemed most logical.
-I was pleased to achieve 80% accuracy in the MultiNomial Bayes test I ran on the text data. This makes me feel more sure of my result. 
+The output of my rec system is difficult to interpret numerically. The success of it is more subject to opinion due to the nature of content based recommendations. I called on the help of my wine drinking friends to try out the results, and they all agreed the Cosine Similarity model seemed most logical.
+
+I was pleased to achieve 83% accuracy in the MultiNomial Bayes test I ran on the text data. This makes me feel more sure of my result. 
 
 Some of the next steps I would like to take include:
 - Adding more wines to the roster
@@ -81,4 +85,4 @@ Some of the next steps I would like to take include:
 ├── .gitignore  
 ├── Project_Notebook.ipynb  
 ├── README.md  
-└── Wine_Recommendations.pdf. 
+└── Wine_Recommendations.pdf 
