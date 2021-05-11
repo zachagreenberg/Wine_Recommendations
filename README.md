@@ -14,16 +14,16 @@ If we can identify wines that are similar to ones we already enjoy, we can have 
 # Data
 The data for this recommender system was scraped from [Vivino.com](www.vivino.com), a website which houses information and reviews on wines. A total of 1200 wines were extracted. With each of these wines, the following information was provided:
 
--*winery*: str, the winery that makes that specific wine  
--*wine_name*: str, the name of the wine  
--*wine_type*: str, the classification of the wine (ie red, white)  
--*wine_country*: str, the country in which the wine was made  
--*average_rating*: float, the average rating of the wine on Vivino.com  
--*num_of_ratings*: int, the number of ratings for that wine  
--*wine_price*: float, the price per bottle  
--*grapes*: str, the grapes utilized in the wine  
--*alcohol_content*: the percent alcohol in the wines  
--*reviews*: str, descriptive text reviews of the wine
+-**winery**: str, the winery that makes that specific wine  
+-**wine_name**: str, the name of the wine  
+-**wine_type**: str, the classification of the wine (ie red, white)  
+-**wine_country**: str, the country in which the wine was made  
+-**average_rating**: float, the average rating of the wine on Vivino.com  
+-**num_of_ratings**: int, the number of ratings for that wine  
+-**wine_price**: float, the price per bottle  
+-**grapes**: str, the grapes utilized in the wine  
+-**alcohol_content**: the percent alcohol in the wines  
+-**reviews**: str, descriptive text reviews of the wine
 
 **IMPORTANT NOTE: Due to the updates of Vivino.com, the scraping process cannot be replicated. Additionally there are frequent repeats of wines with further scrolling down the webpage. 
 
