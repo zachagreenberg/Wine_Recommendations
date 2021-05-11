@@ -12,7 +12,7 @@ When it comes to selecting a wine, there are many choices. Having recommendation
 If we can identify wines that are similar to ones we already enjoy, we can have an easier time selecting new wines with this new information. Additionally, wineries can use this algorithm to recommend other wines in their roster. 
 
 # Data
-The data for this recommender system was scraped from [Vivino.com](www.vivino.com), a website which houses information and reviews on wines. A total of 1200 wines were extracted. With each of these wines, the following information was provided:
+The data for this recommender system was scraped from [Vivino.com](https://www.vivino.com/), a website which houses information and reviews on wines. A total of 1800 wines were extracted. With each of these wines, the following information was provided:
 
 -**winery**: str, the winery that makes that specific wine  
 -**wine_name**: str, the name of the wine  
@@ -63,7 +63,7 @@ I then created variations of recommender systems using Cosine Similarity and Euc
 
 <p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/ModelOutput.png" width="550" height="100" /></p>
 
-This image is a comparison of the two models for a general wine recommender. Each of the recommendations returned a NY Chardonnay, like the Lloyd Chardonnay that was input into the model. Comparing these two outputs would come down to comparing the variation in average rating and price from the input wine. 
+This image is a comparison of the two models for a general wine recommender. Each of the recommendations returned 10 NY Chardonnay wines, like the Lloyd Chardonnay that was the wine input into the model. Comparing the results of these two outputs could have to come down to comparing the variation in average rating and price from the input wine. 
 
 
 
