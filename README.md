@@ -30,7 +30,7 @@ The data for this recommender system was scraped from [Vivino.com](www.vivino.co
 # Exploratory Data Analysis
 My process began by looking at the distribution of wine types from my scraped data:
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/wine_graphs.png" width="900" height="400" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/wine_graphs.png" width="1000" height="410" /></p>
 
 The distribution of wines was fairly even amongst the 6 types. It was also not surprising that the top 3 countries represented from these wines were France, the US, and Italy. 
 
@@ -61,9 +61,9 @@ With the utilization of MultiNomial Naive Bayes, the textual data had a 83% accu
 
 I then created variations of recommender systems using Cosine Similarity and Euclidean Distance as metrics. The variations included a general wine recommender and even recommendatons by winery. 
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/ModelOutput.png" width="650" height="250" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/ModelOutput.png" width="450" height="200" /></p>
 
-This image is a comparison of the two models for a general wine recommender. Each of the recommendations returned a NY Chardonnay, like the Lloyd Chardonnay that was input into the model.
+This image is a comparison of the two models for a general wine recommender. Each of the recommendations returned a NY Chardonnay, like the Lloyd Chardonnay that was input into the model. Comparing these two outputs would come down to comparing the variation in average rating and price from the input wine. 
 
 
 
