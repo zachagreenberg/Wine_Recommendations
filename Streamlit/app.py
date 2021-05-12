@@ -15,7 +15,7 @@ information.rename(columns = {'title':'Wine Name', 'wine_type': 'Wine Type', 'wi
 information.set_index('Wine Name', inplace = True)
 
 
-
+#making containers
 header = st.beta_container()
 about = st.beta_container()
 recommender = st.beta_container()
