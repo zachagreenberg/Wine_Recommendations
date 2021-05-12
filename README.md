@@ -6,7 +6,7 @@ by Zachary Greenberg
 
 
 # Overview
-When it comes to selecting a wine, there are many choices. Having recommendations is helpful, as it will educate customers about new bottles and wineries alike. With the help of Data Science, I have generated a content based recommender system to identify wines that are similar to ones we already enjoy. I have additionally run a MultiNomial Bayes to assess the quality of the data.
+When it comes to selecting a wine, there are many choices. Having recommendations is helpful, as it will educate customers about new bottles and wineries alike. With the help of Data Science, I have generated a content based recommender system to identify wines that are similar to ones we already enjoy. To be sure of the quality of the data, I have run a MultiNomial Bayes to assess the provided textual reviews of each wine. Additionally, I have created a simple front end of the finished recommender system using Streamlit.
 
 # Business Problem
 If we can identify wines that are similar to ones we already enjoy, we can have an easier time selecting new wines with this new information. Additionally, wineries can use this algorithm to recommend other wines in their roster. 
@@ -25,7 +25,7 @@ The data for this recommender system was scraped from [Vivino.com](https://www.v
 -**alcohol_content**: the percent alcohol in the wines  
 -**reviews**: str, descriptive text reviews of the wine
 
-**IMPORTANT NOTE: Due to the updates of Vivino.com, the scraping process cannot be replicated. Additionally there are frequent repeats of wines with further scrolling down the webpage. 
+**IMPORTANT NOTE: Due to the updates of Vivino.com, the scraping process cannot be replicated. Additionally there are frequent repeats of wines with further scrolling down the webpage. I would suggest putting the links into a set() to accomodate for this. 
 
 # Exploratory Data Analysis
 My process began by looking at the distribution of wine types from my scraped data:
@@ -35,7 +35,7 @@ My process began by looking at the distribution of wine types from my scraped da
 The distribution of wines was fairly even amongst the 6 types. It was also not surprising that the top 3 countries represented from these wines were France, the US, and Italy. 
 
 
-One of my focuses was specifically the text reviews. I performed NLP techniques on them and generated word clouds for each of the types of wine. (All of the clouds are available in the image folder, I condensed it for the Readme to save space.) 
+One of my focuses was specifically the text reviews. I performed NLP techniques on them and generated word clouds for each of the types of wine. (All of the clouds are available in the image folder, I condensed it here down to 4 of the 6 to save space.) 
 
 <p float="left">
   <img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Redcloud.png" width="300" height="300" />
@@ -55,7 +55,7 @@ We can see from these wordclouds that the reviews seem to characterize the profi
 # Modeling
 Before I created my recommender system, I put the parsed review text data into a classification algorithm to assess their ability to predict the type of wine.
 
-With the utilization of MultiNomial Naive Bayes, the textual data had a 83% accuracy rate of correctly identifying the types of wine. This allowed me to validate the reviews as helpful bits of information in generating content based recommendations.
+With the utilization of MultiNomial Naive Bayes, the textual data had an 83% accuracy rate of correctly identifying the types of wine. This allowed me to validate the reviews as helpful bits of information in generating content based recommendations.
 
 <p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Matrix.png" width="500" height="350" /></p>
 
@@ -63,25 +63,25 @@ I then created variations of recommender systems using Cosine Similarity and Euc
 
 <p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/ModelOutput.png" width="550" height="100" /></p>
 
-This image is a comparison of the two models for a general wine recommender. Each of the recommendations returned 10 NY Chardonnay wines, like the Lloyd Chardonnay that was the wine input into the model. Comparing the results of these two outputs could have to come down to comparing the variation in average rating and price from the input wine. 
-
+This image is a comparison of the two models for a general wine recommender. Each of the models returned 10 wines using the 1000 Stories Chardonnay 2018 as a base for recommendations. 
 
 
 # Evaluation & Next Steps
-The output of my rec system is difficult to interpret numerically. The success of it is more subject to opinion due to the nature of content based recommendations. I called on the help of my wine drinking friends to try out the results, and they all agreed the Cosine Similarity model seemed most logical.
+The output of my rec system is difficult to interpret numerically. According the comparison of 'average_rating' and 'wine_price' in the models, the Euclidean model seemed a bit more probable, as the averages were closer to the input wine. The true success of it, I believe, is more subject to opinion due to the nature of content based recommendations. I called on the help of my wine drinking friends to try out the results, and they all agreed the Euclidean Distance model seemed most logical.
 
-I was pleased to achieve 83% accuracy in the MultiNomial Bayes test I ran on the text data. This makes me feel more sure of my result. 
+I was pleased to achieve 83% accuracy in the MultiNomial Bayes test I ran on the text data. This makes me feel more sure of my results. 
 
 Some of the next steps I would like to take include:
 - Adding more wines to the roster
-- Using LDA for topic modeling to search for wines by description
-- Create an interface for user interaction
+- Using LDA for topic modeling to supplement the search features for the models
+- Enhancing my Streamlit app
 
 -----------------------------------------------
 ## Repository Structure
 
 ├── Data  
-├── Images  
+├── Images    
+├── Streamlit  
 ├── .gitignore  
 ├── Project_Notebook.ipynb  
 ├── README.md  
