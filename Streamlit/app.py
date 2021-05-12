@@ -1,7 +1,7 @@
 #importing libraries
 import streamlit as st
 import pandas as pd
-from sklearn.metrics.pairwise import euclidean_distances
+import sklearn
 
 
 #importing data
@@ -37,7 +37,7 @@ with recommender:
     numbers = st.slider('How may recommendations would you like?', min_value=1, max_value=25)
 
 
-    euc_dist = euclidean_distances(vectorized_data, vectorized_data)
+    euc_dist = sklearn.metrics.pairwise.euclidean_distances(vectorized_data, vectorized_data)
     # Storing indices of the data
     indices = pd.Series(information.index)
 
