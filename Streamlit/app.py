@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import euclidean_distances
 
 
-#importing data
+#importing datasets
 information = pd.read_csv('df.csv')
 vectorized_data = pd.read_csv('scale_model_data.csv', index_col = ['title'])
 
