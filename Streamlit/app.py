@@ -28,7 +28,7 @@ with header:
     st.title('Wine Recommender System')
     st.text('By: Zachary Greenberg')
     
-    st.image('https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/App.png')
+    st.image('https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/App.jpg')
 
 with about:
     st.title('About')
