@@ -66,11 +66,23 @@ I then created variations of recommender systems using Cosine Similarity and Euc
 This image is a comparison of the two models for a general wine recommender. Each of the models returned 10 wines using the 1000 Stories Chardonnay 2018 as a base for recommendations. 
 
 
-# Evaluation & Next Steps
+# Evaluation
 The output of my rec system is difficult to interpret numerically. According the comparison of 'average_rating' and 'wine_price' in the models, the Euclidean model seemed a bit more probable, as the averages were closer to the input wine. The true success of it, I believe, is more subject to opinion due to the nature of content based recommendations. I called on the help of my wine drinking friends to try out the results, and they all agreed the Euclidean Distance model seemed most logical.
+
 
 I was pleased to achieve 83% accuracy in the MultiNomial Bayes test I ran on the text data. This makes me feel more sure of my results. 
 
+# Streamlit
+
+I was able to take my recommender system and create a basic front end for user interaction using streamlit:
+
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Streamlit.png" width="550" height="100" /></p>
+
+Using this interactive recommender, the user can select up to 25 wines to be recommended!
+
+[Click Here for the App]('https://share.streamlit.io/zachagreenberg/wine_recommendations/main/Streamlit/app.py')
+
+# Next Steps
 Some of the next steps I would like to take include:
 - Adding more wines to the roster
 - Using LDA for topic modeling to supplement the search features for the models
