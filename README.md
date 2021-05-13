@@ -61,7 +61,7 @@ With the utilization of MultiNomial Naive Bayes, the textual data had an 83% acc
 
 I then created variations of recommender systems using Cosine Similarity and Euclidean Distance as metrics. The variations included a general wine recommender and even recommendatons by winery. 
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Modelcomparison.png" width="550" height="100" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Model_comparison.png" width="550" height="100" /></p>
 
 This image is a comparison of the two models for a general wine recommender. Each of the models returned 10 wines using the 1000 Stories Chardonnay 2018 as a base for recommendations. 
 
@@ -76,7 +76,7 @@ I was pleased to achieve 83% accuracy in the MultiNomial Bayes test I ran on the
 
 I was able to take my recommender system and create a basic front end for user interaction using streamlit:
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Demo.gif" width="500" height="500" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Demo.gif" width="600" height="400" /></p>
 
 Using this interactive recommender, the user can select up to 25 wines to be recommended!
 
