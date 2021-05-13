@@ -1,3 +1,7 @@
+"""This is the code for my simple Streamlit app."""
+
+
+
 #importing libraries
 import streamlit as st
 import pandas as pd
@@ -5,8 +9,8 @@ from sklearn.metrics.pairwise import euclidean_distances
 
 
 #importing datasets
-information = pd.read_csv('df.csv')
-vectorized_data = pd.read_csv('scale_model_data.csv', index_col = ['title'])
+information = pd.read_csv('https://raw.githubusercontent.com/zachagreenberg/Wine_Recommendations/main/Streamlit/df.csv')
+vectorized_data = pd.read_csv('https://raw.githubusercontent.com/zachagreenberg/Wine_Recommendations/main/Streamlit/scale_model_data.csv', index_col = ['title'])
 
 
 #renaming the columns
