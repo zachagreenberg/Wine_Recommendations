@@ -76,11 +76,11 @@ I was pleased to achieve 83% accuracy in the MultiNomial Bayes test I ran on the
 
 I was able to take my recommender system and create a basic front end for user interaction using streamlit:
 
-<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Streamlit.png" width="550" height="100" /></p>
+<p align="center"><img src="https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/Streamlit.png" width="550" height="700" /></p>
 
 Using this interactive recommender, the user can select up to 25 wines to be recommended!
 
-[Click Here for the App]('https://share.streamlit.io/zachagreenberg/wine_recommendations/main/Streamlit/app.py')
+[Click Here for the App](https://share.streamlit.io/zachagreenberg/wine_recommendations/main/Streamlit/app.py)
 
 # Next Steps
 Some of the next steps I would like to take include:
