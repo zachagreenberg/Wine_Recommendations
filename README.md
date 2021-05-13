@@ -82,6 +82,8 @@ Using this interactive recommender, the user can select up to 25 wines to be rec
 
 [Click Here for the App](https://share.streamlit.io/zachagreenberg/wine_recommendations/main/Streamlit/app.py)
 
+** Note the recommender works, however, I am currently having issues with the original layout not being saved.
+
 # Next Steps
 Some of the next steps I would like to take include:
 - Adding more wines to the roster
