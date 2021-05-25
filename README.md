@@ -90,11 +90,11 @@ Some of the next steps I would like to take include:
 -----------------------------------------------
 ## Repository Structure
 
-|_ data
-|_ images
-|_ streamlit
-|_ .gitignore
-|_ EDA_Modeling_Eval.ipynb
-|_ README.md
-|_ Wine_Rec_Presentation.pdf
+|_ data  
+|_ images  
+|_ streamlit  
+|_ .gitignore  
+|_ EDA_Modeling_Eval.ipynb  
+|_ README.md  
+|_ Wine_Rec_Presentation.pdf  
 
