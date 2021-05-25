@@ -90,9 +90,9 @@ Some of the next steps I would like to take include:
 -----------------------------------------------
 ## Repository Structure
 
-|_ data  
-|_ images  
-|_ streamlit  
+|_ Data    
+|_ Images    
+|_ Streamlit    
 |_ .gitignore  
 |_ EDA_Modeling_Eval.ipynb  
 |_ README.md  
