@@ -28,11 +28,11 @@ with header:
     st.title('Wine Recommender System')
     st.text('By: Zachary Greenberg')
        
-    st.image('https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/App.jpg')
+    st.image('https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/App.png')
 
 with about:
     st.title('About')
-    st.write('Welcome to the page for my wine recommender system! This is my capstone project at Flatiron School\'s Data Science Immersive Bootcamp. \nThe data for this wine recommender comes from [Vivino.com](https://www.vivino.com). Users can select from a variety \nof 1800 wines. These wines being various types from wineries all around the world. The user can choose the amount of recommendations they would like in a range of 1 to 25. The recommendations will show you the wine names as well as other information including the type of wine, country in which the wine was made, grapes the wine was made with, average rating (from a scale of 1-5 on Vivino.com), as well as the wine price in USD. The recommender system will generate it\'s recommendations based on the selection using Euclidean Distance, returning the closest entries.') 
+    st.write('Welcome to the page for my wine recommender system! This is my capstone project at Flatiron School\'s Data Science Immersive Bootcamp. \nThe data for this wine recommender comes from [Vivino.com](https://www.vivino.com). Users can select from a variety \nof 1800 wines scraped from the site. These wines are of different varieties from wineries all around the world. The user can choose the amount of recommendations they would like in a range of 1 to 25. The recommendations will show you the wine names as well as other information including the type of wine, country in which the wine was made, grapes the wine was made with, average rating (from a scale of 1-5 on Vivino.com), as well as the wine price in USD. The recommender system will generate it\'s recommendations based on the selection using Euclidean Distance, returning the closest entries.') 
 
 with recommender:
     wines = information.index.tolist()
