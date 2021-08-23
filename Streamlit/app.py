@@ -27,10 +27,7 @@ recommender = st.beta_container()
 with header:
     st.title('Wine Recommender System')
     st.text('By: Zachary Greenberg')
-       
-    from PIL import Image
-    image = Image.open('https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/App.png') 
-    st.image(image) 
+ 
        
 
 with about:
