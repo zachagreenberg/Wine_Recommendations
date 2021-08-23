@@ -28,7 +28,10 @@ with header:
     st.title('Wine Recommender System')
     st.text('By: Zachary Greenberg')
        
-    st.image('https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/App.png')
+    from PIL import Image
+    image = Image.open('https://github.com/zachagreenberg/Wine_Recommendations/blob/main/Images/App.png') 
+    st.image(image) 
+       
 
 with about:
     st.title('About')
